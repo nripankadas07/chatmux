@@ -1,0 +1,24 @@
+name: Documentation issue
+description: Report unclear, missing, or inaccurate documentation.
+title: "[docs] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected page or section
+      placeholder: "README, QUALITY, ROADMAP, CLI help, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: false
